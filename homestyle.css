@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(227,181,218);
+background: linear-gradient(90deg, rgba(227,181,218,1) 0%, rgba(227,182,218,1) 39%, rgba(237,218,237,1) 100%);
+  margin: 0;
+  padding: 0;
+  margin-top: 0px;
+}
+
+nav {
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  position: sticky;
+ flex-wrap: wrap;
+  top: 0px;
+  font-size: 60px;
+  padding-top: 10px;
+  font-family: "Lily Script One", cursive;
+
+}
+
+.shopButton {
+  
+  align-self: right;
+  position: absolute;
+  top: 30px;
+  right: 1%;
+  font-size: 50%;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.contactButton {
+  padding-top: 50px;
+  align-self: right;
+  position: absolute;
+  top: 30px;
+  right: 1%;
+  font-size: 50%;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+button {
+  align-self: right;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.box1 {
+  width: 100%;
+  text-align: center;
+  min-width: 480px;
+  background-color: lightblue;
+  height: 100vh;
+  background-image: url(./recursos/background.jpeg);
+  background-size: cover;
+  background-position-x: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box2 {
+  display: flex;
+  width: 60%;
+  text-align: center;
+  min-width: 480px;
+  background-color: #dbcdf0;
+  height: 100vh;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  text-align: left;
+  padding-top: 0px;
+}
+
+.box3 {
+  width: 40%;
+  text-align: center;
+  min-width: 480px;
+  background-color: #dbcdf0;
+  height: 100vh;
+}
+
+.box4 {
+  width: 100%;
+  text-align: center;
+  min-width: 480px;
+  background-color: rgb(201, 189, 175);
+  height: 100vh;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 350%;
+  padding: 60px;
+  background-image: url(./recursos/background3.png);
+  background-size: cover;
+  background-position-x: center;
+}
+
+.box5 {
+  display: flex;
+  width: 40%;
+  text-align: center;
+  min-width: 480px;
+  background-image: url(./recursos/background5.jpeg);
+  background-size: cover;
+  background-position-x: center;
+  height: 100vh;
+}
+
+.box6 {
+  display: flex;
+  width: 60%;
+  text-align: center;
+  min-width: 480px;
+  height: 100vh;
+  place-content: center;
+  background-image: url(./recursos/background6.jpeg);
+  background-size: cover;
+  background-position-x: center;
+}
+
+.logofront {
+  max-width: 80%;
+  padding-top: 25vh;
+  animation: up-down 3s infinite ease-in-out alternate;
+}
+
+h1{
+text-align: right;
+font-weight: bolder;
+color:rgb(144, 29, 211);
+}
+
+h1.titlebox2 {
+  text-align: right;
+  font-weight: bolder;
+  color:rgb(144, 29, 211);
+  padding-top: 240px;
+  font-size: 450%;
+}
+
+.pbox2{
+  padding-top: 23px;
+  font-size: 36px;
+  
+}
+
+.macaronbox {
+  max-width: 100%;
+  padding-top: 25vh;
+  animation: up-down 3s infinite ease-in-out alternate;
+}
+
+.grow img {
+  transition: 1s ease;
+  width: 27vh;
+}
+
+.grow img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+
+.macbox {
+  justify-content: space-around;
+
+  display: flex;
+  padding: 100px;
+  bottom: 0px;
+  line-height: 80vh;
+}
+
+@keyframes up-down {
+  from {
+    transform: translatey(0px);
+  }
+  to {
+    transform: translatey(-20px);
+  }
+}
+
+/* BREAKPOINT MOBILE*/
+
+@media (max-width: 600px) {
+  .box2,
+  .box5 {
+    width: 100vh;
+    height: 60vh;
+  }
+
+  .box3,
+  .box6 {
+    width: 100vh;
+    height: 40vh;
+  }
+
+  .box1,
+  .box4 {
+    height: 100vh;
+    width: 100vh;
+  }
+
+  .logofront {
+    max-width: 90%;
+    padding-top: 50vh;
+  }
+
+  .container {
+    padding: 0px;
+    width: 360px;
+    height: 640px;
+  }
+
+  .box1 {
+    justify-content: space-evenly;
+    padding-left: 50px;
+  }
+
+  h1 {
+    font-size: 70%;
+  }
+
+  p {
+    width: 97%;
+    padding-top: 40px;
+    font-size: 17px;
+    text-align: right;
+  }
+
+  .box2 {
+    height: 640;
+    width: 360;
+    flex-direction: column;
+  }
+
+  .box4 {
+    font-size: 95%;
+    color: rgb(255, 255, 255);
+    background-image: url(./recursos/background2.png);
+    background-size: 69%;
+    background-position-x: center;
+    background-position-y: 0px;
+    padding: 0px;
+  }
+
+  img.macaronbox {
+    max-width: 300px;
+    padding-top: 0vh;
+  }
+
+  .macbox {
+    padding-top: 20px;
+    flex-direction: column;
+    width: 75vh;
+    bottom: 0px;
+    line-height: 0vh;
+
+    padding-top: 0vh;
+  }
+  .pbox2 {
+    width: 360px;
+    text-align: right;
+    font-size: 47%;
+    padding-left: 10px;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+
+  p.pbox4 {
+    position: absolute;
+    padding: 0;
+    text-align: right;
+    padding-right: 20;
+  }
+
+  .grow img {
+    width: 15vh;
+  }
+}
